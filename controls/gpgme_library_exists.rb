@@ -32,7 +32,6 @@ control 'core-plans-gpgme-library-exists' do
       its('exit_status') { should eq 0 }
       its('stdout') { should_not be_empty }
       its('stdout') { should match /#{plan_pkg_version}/ }
-      its('stderr') { should be_empty }
     end
   end
 end
