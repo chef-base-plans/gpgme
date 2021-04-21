@@ -11,7 +11,7 @@ pkg_bin_dirs=(bin)
 pkg_lib_dirs=(lib)
 pkg_include_dirs=(include)
 pkg_build_deps=(core/gcc core/coreutils core/make)
-pkg_deps=(core/glibc core/libassuan core/libgpg-error)
+pkg_deps=(core/glibc core/libassuan core/gnupg2 core/libgpg-error)
 
 do_build() {
   ./configure \
